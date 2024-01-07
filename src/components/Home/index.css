@@ -72,16 +72,31 @@
 }
 
 .bg-img{
-    width: 720px;
+   
     background-size:cover;
-    background-position:bottom;
-    
+    background-position: bottom;
+   height:100vh;
+    width:700px;
 
-    height:100vh;
+ 
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
+}
+
+@media screen and (max-width:980px) and (min-width:769px) {
+
+    .app-container{
+display:flex;
+flex-direction: column;
+    }
+    .bg-img{
+        height:auto;
+    }
+    .intro-card{
+        width: 80%;
+    }
 }
 
 
@@ -253,6 +268,7 @@ margin-right: 35px;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
+
     }
     .description{
         font-size:15px;
@@ -271,11 +287,7 @@ margin-right: 35px;
         display:none;
     }
     .bg-img{
-        width:80%;
-  margin-top: 20px;
-        background-size:cover;
-        background-position:top;
-        height:200px;
+        display: none;
     }
   
     .input-box{
@@ -316,6 +328,7 @@ margin-right: 35px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width:100%;
 }
 .menu-icon{
     font-size:30px;
@@ -328,6 +341,10 @@ margin-right: 35px;
     padding:0px;
     padding:15px;
 }
+.bg-image{
+    width:100%;
+    height:auto;
+}
   .nav-item{
     margin-bottom:20px;
     font-size:22px;
@@ -335,10 +352,16 @@ margin-right: 35px;
   .mobile-sidebar{
     display: block;
 }
+.mobile-bg-img{
+    display: block;
+}
 }
 
 @media screen and (min-width:768px) {
     .mobile-sidebar{
+        display: none;
+    }
+    .mobile-bg-img{
         display: none;
     }
 }

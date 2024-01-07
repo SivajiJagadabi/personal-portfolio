@@ -11,6 +11,7 @@ import { RiInstagramFill } from "react-icons/ri";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import ProjectCard from '../ProjectCard'
+import mobileBg from '../Images/mobileBg.png'
 
 
 const backgroundImageStyle = {
@@ -124,6 +125,9 @@ const Home = () => {
                             <button className='linkedin-btn'>LinkedIn</button>
                         </div>
                     </div>
+                </div>
+                <div className='mobile-bg-img'>
+                    <img src={mobileBg} className='bg-image'/>
                 </div>
                 <div style={backgroundImageStyle} className='bg-img'>
                     <ul className='nav-items'>
