@@ -97,6 +97,13 @@ flex-direction: column;
     .intro-card{
         width: 80%;
     }
+    .mobile-nav-item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width:100%;
+    }
+    
 }
 
 
